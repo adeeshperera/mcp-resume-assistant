@@ -1,0 +1,40 @@
+{
+  "education": [
+    "EDUCATION AND TRAINING",
+    "BSc (Hons) Computer Science",
+    "University of Plymouth [ Mar 2022 – Dec 2025 ]",
+    "Country: United Kingdom | Website: https://www.plymouth.ac.uk/",
+    "AWS Cloud Practitioner Essentials",
+    "AWS Training & Certification [ May 2025 ]",
+    "Website: https://skillbuilder.aws/",
+    "Linux Fundamentals with System Administration Essentials",
+    "KodeKloud [ Aug 2025 ]",
+    "Website: https://learn.kodekloud.com/user/courses/lab-linux-tutorial"
+  ],
+  "skills": [
+    "SKILLS",
+    "Development",
+    "Java / Spring Boot, Spring JPA, Spring Security, Spring MVC / Apache Maven / TypeScript / Next.js / Node.js / Express /",
+    "React / SQL / Python / PHP / Flutter / Go/Golang / Rust / C#",
+    "Cloud & Data Engineering"
+  ],
+  "projects": [
+    "AWS / Digital Ocean / Docker / CI/CD - Github Actions / Linux / Git / Data Warehouses and Data Processing / Data",
+    "Pipelines / Snowflake / GCP / MS Azure",
+    "Databases & Data Management",
+    "Relational Databases / Non-Relational Databases / PostgreSQL / MongoDB"
+  ],
+  "experience": [
+    "with role-based access control and secure REST APIs.",
+    "Link:",
+    "https://github.com/adeeshperera/spring-security-blog-platform"
+  ],
+  "contact": [
+    "Phone number: (+94) 740301774",
+    "",
+    "Email address: adeesh.perera@outlook.com",
+    ""
+  ],
+  "rawText": "\n\nEDUCATION AND TRAINING\nBSc (Hons) Computer Science \nUniversity of Plymouth [ Mar 2022 – Dec 2025 ] \nCountry: United Kingdom | Website: https://www.plymouth.ac.uk/ \nAWS Cloud Practitioner Essentials \nAWS Training & Certification [ May 2025 ] \nWebsite: https://skillbuilder.aws/ \nLinux Fundamentals with System Administration Essentials \nKodeKloud [ Aug 2025 ] \nWebsite: https://learn.kodekloud.com/user/courses/lab-linux-tutorial \nSKILLS \nDevelopment\nJava / Spring Boot, Spring JPA, Spring Security, Spring MVC / Apache Maven / TypeScript / Next.js / Node.js / Express / \nReact / SQL / Python / PHP / Flutter / Go/Golang / Rust / C# \nCloud & Data Engineering\nAWS / Digital Ocean / Docker / CI/CD - Github Actions / Linux / Git / Data Warehouses and Data Processing / Data\nPipelines / Snowflake / GCP / MS Azure \nDatabases & Data Management\nRelational Databases / Non-Relational Databases / PostgreSQL / MongoDB \nSoftware Development Practices & Soft Skills\nAgile development / Data structures and Algorithms / Object Oriented Programming (OOP) / Test-Driven\nDevelopment / System Design / Code Review / Problem-Solving / Team Collaboration / Adaptability and Continuous\nLearning / Technical Leadership / Communication / Analytical / Troubleshooting \nPROJECTS \nCourseGenix AI Learning Studio \nAI-driven course creator with Next.js. Generate educational content, videos, and quizzes instantly.\n \nLinks:\n \nhttps://www.coursegenix.me/ |\n \nhttps://github.com/adeeshperera/coursegenix-ai-learning-studio \nspringboot-core-rest-api \nA core Spring Boot REST API implementation with clean architecture, demonstrating fundamental web service\npatterns and best practices for enterprise development.\nAdeesh Perera \n  Phone number: (+94) 740301774 \n\nEmail address: adeesh.perera@outlook.com \n\nLinkedIn: Adeesh Perera \n\nGitHub: Adeesh Perera \n\nMedium: Adeesh Perera \n\nHome: Colombo (Sri Lanka) \n\n\n \nLinks:\n \nhttps://container-service-1.rgaj2b5egkhqr.ap-southeast-1.cs.amazonlightsail.com/ |\n \nhttps://github.com/\nadeeshperera/springboot-core-rest-api \nspring-boot-task-management-api \nScalable task management platform with Spring Boot backend and React frontend, featuring enterprise-grade\narchitecture, database integration, and RESTful API design patterns.\n \nLink:\n \nhttps://github.com/adeeshperera/spring-boot-task-management-api \nreal-estate-analytics-platform \nReal estate data analytics platform with ML price prediction, Snowflake data warehouse, and automated market\nintelligence pipeline.\n \nLink:\n \nhttps://github.com/adeeshperera/real-estate-analytics-platform \n[ Current ] \nspring-security-blog-platform \nSpring Boot blog platform with JWT authentication and React frontend. Demonstrates Spring Security best practices\nwith role-based access control and secure REST APIs.\n \nLink:\n \nhttps://github.com/adeeshperera/spring-security-blog-platform \nLANGUAGE SKILLS \nOther language(s): English \nNETWORKS AND MEMBERSHIPS \n[ Oct 2022 – Current ] \nIEEE Student Branch \nIEEE, IEEE SSCS, IEEE VTS, IEEE EDS, IEEE WIE\n \n[ Jun 2022 – Current ] \nFOSS Community \nDevLab, Devoke\n \nRECOMMENDATIONS \nName: Dinuka Sankalpa Caldera \nSenior Software Engineer\nWSO2\nEmail: \ndinuka.caldera@gmail.com | Phone number: (+94) 777609656 \nLink:\n \nhttps://www.linkedin.com/in/dinuka-sankalpa-caldera/ \nName: Dilanka Perera \nSenior Software Engineer\nLSEG (London Stock Exchange Group)\nEmail: \ndilankaperera27@gmail.com | Phone number: (+94) 713807333 \nLink:\n \nhttps://www.linkedin.com/in/dilanka-perera/ ",
+  "extractedAt": "2025-09-04T14:48:18.222Z"
+}
