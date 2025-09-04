@@ -103,9 +103,9 @@ function saveDataToJSON(data: CVData): void {
 	const jsonPath = path.join(process.cwd(), "data", "extracted-cv-data.json");
 	try {
 		fs.writeFileSync(jsonPath, JSON.stringify(data, null, 2));
-		console.log("✅ CV data saved to data/extracted-cv-data.json");
+		console.log("CV data saved to data/extracted-cv-data.json");
 	} catch (error) {
-		console.error("❌ Error saving CV data:", error);
+		console.error("Error saving CV data:", error);
 	}
 }
 
@@ -114,11 +114,11 @@ function loadDataFromJSON(): CVData | null {
 	try {
 		if (fs.existsSync(jsonPath)) {
 			const jsonContent = fs.readFileSync(jsonPath, "utf-8");
-			console.log("✅ CV data loaded from data/extracted-cv-data.json");
+			console.log("CV data loaded from data/extracted-cv-data.json");
 			return JSON.parse(jsonContent);
 		}
 	} catch (error) {
-		console.error("❌ Error loading CV data:", error);
+		console.error("Error loading CV data:", error);
 	}
 	return null;
 }
@@ -173,12 +173,12 @@ export class CVParser {
 			if (existingData) {
 				this.cvData = existingData;
 				this.isLoaded = true;
-				console.log("✅ CV data loaded from existing JSON file");
+				console.log("CV data loaded from existing JSON file");
 				return;
 			}
 
 			// If no JSON exists, extract from PDF
-			console.log("📄 Extracting data from PDF...");
+			console.log("Extracting data from PDF...");
 			const dataBuffer = fs.readFileSync(pdfPath);
 			const data = await pdf(dataBuffer);
 
@@ -189,15 +189,15 @@ export class CVParser {
 			// Save to JSON for future use
 			saveDataToJSON(this.cvData);
 
-			console.log("✅ CV loaded and data extracted successfully");
+			console.log("CV loaded and data extracted successfully");
 			console.log(
-				"📊 Extracted sections:",
+				"Extracted sections:",
 				Object.keys(this.cvData).filter(
 					(k) => k !== "rawText" && k !== "extractedAt"
 				)
 			);
 		} catch (error) {
-			console.error("❌ Error loading CV:", error);
+			console.error("Error loading CV:", error);
 			this.isLoaded = false;
 		}
 	}
@@ -222,7 +222,7 @@ export class CVParser {
 	// Method to force re-extraction from PDF
 	async reExtractFromPDF(pdfPath: string): Promise<void> {
 		try {
-			console.log("🔄 Force re-extracting data from PDF...");
+			console.log("Force re-extracting data from PDF...");
 			const dataBuffer = fs.readFileSync(pdfPath);
 			const data = await pdf(dataBuffer);
 
@@ -230,9 +230,9 @@ export class CVParser {
 			this.isLoaded = true;
 
 			saveDataToJSON(this.cvData);
-			console.log("✅ CV data re-extracted and saved");
+			console.log("CV data re-extracted and saved");
 		} catch (error) {
-			console.error("❌ Error re-extracting CV:", error);
+			console.error("Error re-extracting CV:", error);
 			this.isLoaded = false;
 		}
 	}
