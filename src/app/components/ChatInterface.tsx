@@ -89,11 +89,23 @@ export default function ChatInterface() {
 			<div className="flex justify-between items-center p-6 border-b border-gray-100 bg-gradient-to-r from-blue-50 to-indigo-50">
 				<div className="flex items-center gap-3">
 					<div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg flex items-center justify-center">
-						<svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+						<svg
+							className="w-4 h-4 text-white"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth={2}
+								d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+							/>
 						</svg>
 					</div>
-					<h2 className="text-xl font-semibold text-gray-900">Ask About My CV</h2>
+					<h2 className="text-xl font-semibold text-gray-900">
+						Ask About My CV
+					</h2>
 				</div>
 				<div className="flex gap-2">
 					{messages.length > 0 && (
@@ -118,7 +130,9 @@ export default function ChatInterface() {
 			{/* Predefined Question Buttons */}
 			{(messages.length === 0 || showQuickQuestions) && (
 				<div className="p-6 pt-4 border-b border-gray-100">
-					<p className="text-sm font-medium text-gray-700 mb-4">Quick questions to ask:</p>
+					<p className="text-sm font-medium text-gray-700 mb-4">
+						Quick questions to ask:
+					</p>
 					<div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
 						{predefinedQuestions.map((item, index) => (
 							<button
@@ -127,7 +141,9 @@ export default function ChatInterface() {
 								disabled={isLoading}
 								className="text-left px-4 py-3 text-sm font-medium bg-gradient-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 border border-blue-200 rounded-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:bg-gray-100 hover:scale-105 hover:shadow-md"
 							>
-								<span className="text-base mr-2">{item.label.split(' ')[0]}</span>
+								<span className="text-base mr-2">
+									{item.label.split(" ")[0]}
+								</span>
 								<span className="text-gray-700">{item.label.substring(2)}</span>
 							</button>
 						))}
@@ -147,44 +163,79 @@ export default function ChatInterface() {
 				{messages.length === 0 && (
 					<div className="text-gray-500 text-center py-12">
 						<div className="w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
-							<svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+							<svg
+								className="w-8 h-8 text-gray-400"
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 24 24"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth={2}
+									d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+								/>
 							</svg>
 						</div>
-						<p className="text-lg font-medium mb-2">Ready to chat about my CV!</p>
-						<p className="text-sm">Click on any quick question above or type your own question below.</p>
+						<p className="text-lg font-medium mb-2">
+							Ready to chat about my CV!
+						</p>
+						<p className="text-sm">
+							Click on any quick question above or type your own question below.
+						</p>
 					</div>
 				)}
 				{messages.map((message, index) => (
 					<div
 						key={index}
-						className={`flex ${message.role === "user" ? "justify-end" : "justify-start"} animate-fadeInUp`}
+						className={`flex ${
+							message.role === "user" ? "justify-end" : "justify-start"
+						} animate-fadeInUp`}
 					>
 						<div
 							className={`max-w-[80%] p-4 rounded-2xl shadow-sm ${
-								message.role === "user" 
-									? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white" 
+								message.role === "user"
+									? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white"
 									: "bg-gray-50 border border-gray-200"
 							}`}
 						>
-							<div className={`font-semibold text-xs mb-2 ${
-								message.role === "user" ? "text-blue-100" : "text-gray-500"
-							}`}>
+							<div
+								className={`font-semibold text-xs mb-2 ${
+									message.role === "user" ? "text-blue-100" : "text-gray-500"
+								}`}
+							>
 								{message.role === "user" ? "You" : "Assistant"}
 							</div>
-							<div className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</div>
+							<div
+								className={`text-sm leading-relaxed whitespace-pre-wrap ${
+									message.role === "user" ? "text-white" : "text-gray-900"
+								}`}
+							>
+								{message.content}
+							</div>
 						</div>
 					</div>
 				))}
 				{isLoading && (
 					<div className="flex justify-start">
 						<div className="max-w-[80%] p-4 rounded-2xl shadow-sm bg-gray-50 border border-gray-200">
-							<div className="font-semibold text-xs mb-2 text-gray-500">Assistant</div>
+							<div className="font-semibold text-xs mb-2 text-gray-500">
+								Assistant
+							</div>
 							<div className="flex items-center gap-2 text-sm">
 								<div className="flex gap-1">
-									<div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '0ms'}}></div>
-									<div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '150ms'}}></div>
-									<div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{animationDelay: '300ms'}}></div>
+									<div
+										className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+										style={{ animationDelay: "0ms" }}
+									></div>
+									<div
+										className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+										style={{ animationDelay: "150ms" }}
+									></div>
+									<div
+										className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"
+										style={{ animationDelay: "300ms" }}
+									></div>
 								</div>
 								<span className="text-gray-600">Thinking...</span>
 							</div>
@@ -218,8 +269,18 @@ export default function ChatInterface() {
 							</div>
 						) : (
 							<div className="flex items-center gap-2">
-								<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-									<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+								<svg
+									className="w-4 h-4"
+									fill="none"
+									stroke="currentColor"
+									viewBox="0 0 24 24"
+								>
+									<path
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth={2}
+										d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+									/>
 								</svg>
 								<span>Ask</span>
 							</div>
