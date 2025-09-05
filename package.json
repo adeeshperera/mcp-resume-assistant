@@ -10,8 +10,7 @@
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"mcp": "ts-node src/server/index.ts",
-		"mcp:dev": "nodemon src/server/index.ts",
-		"test:mcp": "ts-node test-mcp.ts"
+		"mcp:dev": "nodemon src/server/index.ts"
 	},
 	"dependencies": {
 		"@modelcontextprotocol/sdk": "^1.17.5",
